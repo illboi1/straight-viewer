@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 
-def select_img_from_video(video_file, board_pattern, select_all=False, wait_msec=10, wnd_name='Camera Calibration'):
+def select_img_from_video(video_file, board_pattern, select_all=False, wait_msec=10, wnd_name='Camera Calibration', img_wrapper=None):
 	# Open a video
 	video = cv.VideoCapture(video_file)
 	assert video.isOpened()
@@ -31,10 +31,14 @@ def select_img_from_video(video_file, board_pattern, select_all=False, wait_msec
 				cv.imshow(wnd_name, display)
 				key = cv.waitKey()
 				if key == ord('\r'):
+					if img_wrapper:
+						img_wrapper.add_frame(display)
 					img_select.append(img) # Enter: Select the image
 			if key == 27:                  # ESC: Exit (Complete image selection)
 				break
 
+	if img_wrapper:
+		img_wrapper.write_gif("res/img_select.gif", fps=5)
 	cv.destroyAllWindows()
 	return img_select
 
@@ -55,21 +59,3 @@ def calib_camera_from_chessboard(images, board_pattern, board_cellsize, K=None, 
 
 	# Calibrate the camera
 	return cv.calibrateCamera(obj_points, img_points, gray.shape[::-1], K, dist_coeff, flags=calib_flags)
-
-
-
-if __name__ == '__main__':
-	video_file = 'res/chessboard.mp4'
-	board_pattern = (7, 7)
-	board_cellsize = 0.025
-
-	img_select = select_img_from_video(video_file, board_pattern)
-	assert len(img_select) > 0, 'There is no selected images!'
-	rms, K, dist_coeff, rvecs, tvecs = calib_camera_from_chessboard(img_select, board_pattern, board_cellsize)
-
-	# Print calibration results
-	print('## Camera Calibration Results')
-	print(f'* The number of selected images = {len(img_select)}')
-	print(f'* RMS error = {rms}')
-	print(f'* Camera matrix (K) = \n{K}')
-	print(f'* Distortion coefficient (k1, k2, p1, p2, k3, ...) = {dist_coeff.flatten()}')
