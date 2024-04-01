@@ -9,7 +9,7 @@ Perform camera calibration and produce images whose distortions are corrected.
 * ENTER 키: 정지된 상태에서 현재 이미지를 선택에 추가
 * ESC 키: 프로그램 종료
 
-### Results of Camera Calibration
+#### Results of Camera Calibration
 * The number of selected images = 15
 * RMS error = 1.3133058404322477
 * Camera matrix (K) = 
