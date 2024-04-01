@@ -1,7 +1,11 @@
 # Straight Viewer
 Perform camera calibration and produce images whose distortions are corrected.
 
-## Camera Calibration Results
+## Camera Calibration 파트 [main.py / camera_calibration.py]
+동영상으로부터 입력 이미지 선택 (체스판 동영상 필요)
+![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
+
+### Camera Calibration Results
 * The number of selected images = 15
 * RMS error = 1.3133058404322477
 * Camera matrix (K) = 
@@ -9,3 +13,10 @@ Perform camera calibration and produce images whose distortions are corrected.
  [0.00000000e+00 1.51417734e+03 5.66894338e+02]
  [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
 * Distortion coefficient (k1, k2, p1, p2, k3, ...) = [0.10460431 -0.05506334  0.00271136 -0.00119125 -0.62262696]
+
+## Distortion Correction 파트 [distortion_correction.py]
+원본 이미지 / 왜곡을 보정한 이미지 제공
+[TAB키]: 이미지 전환
+[ESC키]: 프로그램 종료
+[SPACE키]: 정지/재개
+![corrected](https://github.com/illboi1/straight-viewer/assets/88954347/153084af-a370-4651-84e4-7c8637aede3d)
