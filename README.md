@@ -5,7 +5,7 @@ Perform camera calibration and produce images whose distortions are corrected.
 동영상으로부터 입력 이미지 선택 (체스판 동영상 필요)
 ![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
 
-### Camera Calibration Results
+### Results of Camera Calibration
 * The number of selected images = 15
 * RMS error = 1.3133058404322477
 * Camera matrix (K) = 
