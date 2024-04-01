@@ -5,9 +5,9 @@ Perform camera calibration and produce images whose distortions are corrected.
 동영상으로부터 입력 이미지 선택 (약 10~20개)
 (동영상 촬영본 필요, 체스판 코너가 보이도록 촬영)
 ![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
-[스페이스키]: 정지/재개
-[ENTER키]: 정지된 상태에서 현재 이미지를 선택에 추가
-[ESC키]: 프로그램 종료
+* [SPACE 키]: 정지/재개
+* [ENTER 키]: 정지된 상태에서 현재 이미지를 선택에 추가
+* [ESC 키]: 프로그램 종료
 
 ### Results of Camera Calibration
 * The number of selected images = 15
@@ -22,6 +22,6 @@ Perform camera calibration and produce images whose distortions are corrected.
 원본 이미지 / 왜곡을 보정한 이미지 제공
 ![corrected](https://github.com/illboi1/straight-viewer/assets/88954347/153084af-a370-4651-84e4-7c8637aede3d)
 
-* [TAB키]: 이미지 전환
-* [ESC키]: 프로그램 종료
-* [스페이스키]: 정지/재개
+* [TAB 키]: 이미지 전환
+* [ESC 키]: 프로그램 종료
+* [스페이스 키]: 정지/재개
