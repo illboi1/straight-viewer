@@ -2,7 +2,7 @@
 Perform camera calibration and produce images whose distortions are corrected.
 
 ## Camera Calibration 파트 [main.py / camera_calibration.py]
-동영상으로부터 입력 이미지 선택 (체스판 동영상 필요)
+동영상으로부터 입력 이미지 선택 (약 10~20개) (체스판 동영상 촬영본 필요)
 ![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
 
 ### Results of Camera Calibration
