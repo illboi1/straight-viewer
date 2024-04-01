@@ -7,7 +7,7 @@ Perform camera calibration and produce images whose distortions are corrected.
 * [SPACE키]: 정지/재개
 * [ENTER키]: 정지된 상태에서 현재 이미지를 선택에 추가
 * [ESC키]: 프로그램 종료
-![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
+* ![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
 
 ### Results of Camera Calibration
 * The number of selected images = 15
@@ -23,4 +23,4 @@ Perform camera calibration and produce images whose distortions are corrected.
 * [TAB키]: 이미지 전환
 * [ESC키]: 프로그램 종료
 * [SPACE키]: 정지/재개
-![corrected](https://github.com/illboi1/straight-viewer/assets/88954347/153084af-a370-4651-84e4-7c8637aede3d)
+* ![corrected](https://github.com/illboi1/straight-viewer/assets/88954347/153084af-a370-4651-84e4-7c8637aede3d)
