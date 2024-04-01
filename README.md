@@ -6,7 +6,7 @@ Perform camera calibration and produce images whose distortions are corrected.
 (동영상 촬영본 필요, 체스판 코너가 보이도록 촬영)
 ![img_select](https://github.com/illboi1/straight-viewer/assets/88954347/3dada07d-edca-49ab-82b1-628ea999443e)
 
-* [SPACE키]: 정지/재개
+* [스페이스키]: 정지/재개
 * [ENTER키]: 정지된 상태에서 현재 이미지를 선택에 추가
 * [ESC키]: 프로그램 종료
 
@@ -25,4 +25,4 @@ Perform camera calibration and produce images whose distortions are corrected.
 
 * [TAB키]: 이미지 전환
 * [ESC키]: 프로그램 종료
-* [SPACE키]: 정지/재개
+* [스페이스키]: 정지/재개
